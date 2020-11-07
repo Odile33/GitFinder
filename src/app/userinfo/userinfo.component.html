@@ -1,14 +1,56 @@
 
 <div>
-    <app-search></app-search>
+    
+</div>
+<div class="container">
+    <h4 class="text-center h4 text-white text-white">Check Out Github User Profiles Here!</h4>
+    <app-search (emitsearchtxt)="searchProf($event)"></app-search>
+    <hr>
 </div>
 <div class="container">
     <p>Look for a certain Github user </p>
 </div>
+
 <div class="container">
     <div class="row">
-        <div class="col-md-6"></div>
-        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <div class="container">
+                <div class="">
+                    <div *ngFor="let profile of profiles">
+                        <br><br>
+                        <div class="text-center mt-4 pt-5 ml-4">
+                            <img src="{{profile.avatar_url}}" class="align-center img-fluid  z-depth-3 rounded-circle animated jello delay-3s" width="60%" height="60%" alt="github avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="container mt-4">
+                <h2 class="text-center h2 h2-responsive text-white animated swing delay-3s">GITHUB PROFILE DETAILS</h2>
+                <div class="jumbotron">
+                    <div *ngFor="let profile of profiles">
+                        <div class="">
+                            <p  class="lead"> <strong>Name:</strong> {{profile.name}}</p>
+                            <p > <strong>Username:</strong> {{profile.login}}</p>
+                            <p > <strong>Bio:</strong> {{profile.bio}}</p>
+                            <p > <strong>Public Repos:</strong> {{profile.public_repos}}</p>
+                            <p > <strong>Followers:</strong> {{profile.followers}}</p>
+                            <p > <strong>Following:</strong> {{profile.following}}</p>
+                            <p > <strong>Location:</strong> {{profile.location}}</p>
+                            <p > <strong>Join Date:</strong> {{profile.created_at |date}}</p>
+                            <p><a href="{{profile.html_url}}" target="_blank"><button type="button" class="btn btn-elegant blue-gradient"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <app-repositoryinfo></app-repositoryinfo>
+
     </div>
     
 

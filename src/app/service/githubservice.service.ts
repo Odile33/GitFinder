@@ -22,9 +22,8 @@ export class GithubserviceService {
       url: string;
     }
 
-    // let searchEndpoint= "https://api.github.com/users/+'searchTerm'+?access_token="+environment.APIKEY;
-  // searchEndpoint += "&q="+searchTerm;
-  let promise =  new Promise((resolve, reject)=>{
+   
+    let promise =  new Promise((resolve, reject)=>{
 
       this.http.get<data>('https://api.github.com/users/'+searchtxt+'?access_token='+environment.APIKEY).toPromise().then(
         (results)=>{
@@ -38,11 +37,11 @@ export class GithubserviceService {
           reject()
         }
       )
-  })
-  return promise;
-}
+    })
+    return promise;
+  }
 
-//GIT REPO SEARCH BEGINS
+
 searchRepo(searchtxt:string){
   interface results {
     login:string;
