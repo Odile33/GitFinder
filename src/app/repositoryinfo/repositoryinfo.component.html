@@ -4,14 +4,16 @@
 </div>
 <div class="container">
     <h4 class="text-center h4 text-white text-white">Check Out Github User Profiles Here!</h4>
-    <app-search (emitsearchtxt)="searchProf($event)"></app-search>
+    <app-search (emitsearchtxt)="searchRepo($event)"></app-search>
     <hr>
 </div>
 <div class="container">
     <p>Look for a certain Github user </p>
 </div>
 <div class="container">
+    
     <div class="card" *ngFor="let repo of repos">
+        <h2 class="text-center h2 h2-responsive text-blue animated swing delay-3s">{{searchtxt}} GITHUB REPOSITORIES </h2>
         <div class="card">
           <div class="card-header text-center blue-gradient text-white"><h2>{{repo.name}}</h2></div>
           <div class="card-body">
