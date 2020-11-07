@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GitFinder"
+    }
+  },
+  "defaultProject": "GitFinder",
+  "cli": {
+    "analytics": "c482aad3-ade9-476c-b89c-e737b47cb42e"
+  }
 }
