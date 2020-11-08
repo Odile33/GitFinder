@@ -18,13 +18,13 @@
           <div class="card-body">
             <p class="card-text"><strong>Description: </strong>{{repo.description}}</p>
             <p class="card-text"><strong>Create at: </strong>{{repo.created_at|date}}</p>
-            <p class="card-text"> <strong>Language: </strong> {{repo.language}}.</p>
+            <p class="card-text"> <strong>Language: </strong> {{repo.language|font}}.</p>
             <!-- Button -->
-            <a href="{{repo.html_url}}" target="_blank" class="btn btn-info btn-lg btn-block">Check it on Github</a>
+            <a appHover href="{{repo.html_url}}" target="_blank" class="btn btn-info btn-lg btn-block">Check it on Github</a>
           </div>
           <div class="card-footer flex-footer">
-            <small class="text-muted"><strong>Branch: </strong>{{repo.default_branch}} </small>
-            <small class="text-muted ml-4"><strong> Forks: </strong>{{repo.forks_count}}</small>
+            <small class="text-muted" appHover ><strong>Branch: </strong>{{repo.default_branch}} </small>
+            <small class="text-muted ml-4" appHover><strong> Forks: </strong>{{repo.forks_count}}</small>
   
           </div>
         </div>

@@ -7,7 +7,7 @@ export class HoverDirective {
 
   constructor(private light:ElementRef) { }
   @HostListener("mouseenter") onMouseEnter(){
-    this.lightup("rgba(255,215,0, 0.1)");
+    this.lightup("rgba(255,140,0, 0.5)");
   }
   @HostListener("mouseleave") onMouseLeave(){
     this.lightup(null);
