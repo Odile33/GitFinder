@@ -13,6 +13,7 @@ import { RepositoryinfoComponent } from './repositoryinfo/repositoryinfo.compone
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FontPipe } from './font.pipe';
+import { HoverDirective } from './hover.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FontPipe } from './font.pipe';
     RepositoryinfoComponent,
     NavbarComponent,
     NotFoundComponent,
-    FontPipe
+    FontPipe,
+    HoverDirective
   ],
   imports: [
     BrowserModule,

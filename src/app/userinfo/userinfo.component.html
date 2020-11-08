@@ -2,7 +2,7 @@
 <div class="container">
     <ng-progress></ng-progress>
     <h4 class="text-center h4 text-white text-white">Check Out Github User Profiles Here!</h4>
-    <app-search (emitsearchtxt)="searchProf($event)"></app-search>
+    <app-search (emitsearchtxt)="searchProf($event)" appHover></app-search>
     <hr>
 </div>
 <div class="container">
@@ -37,7 +37,7 @@
                             <p > <strong>Following:</strong> {{profile.following}}</p>
                             <p > <strong>Location:</strong> {{profile.location}}</p>
                             <p > <strong>Join Date:</strong> {{profile.created_at |date}}</p>
-                            <p><a href="{{profile.html_url}}" target="_blank"><button type="button" class="btn btn-elegant blue-gradient"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
+                            <p appHover><a href="{{profile.html_url}}" target="_blank"><button type="button" class="btn btn-elegant blue-gradient"><i class="far fa-user pr-2" aria-hidden="true"></i>View Profile on Github</button></a></p>
                             <br>
                         </div>
                     </div>
