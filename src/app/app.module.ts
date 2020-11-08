@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FontPipe } from './font.pipe';
 import { HoverDirective } from './hover.directive';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HoverDirective } from './hover.directive';
     NavbarComponent,
     NotFoundComponent,
     FontPipe,
-    HoverDirective
+    HoverDirective,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
