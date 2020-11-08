@@ -14,7 +14,7 @@
     <div class="card" *ngFor="let repo of repos">
         <h2 class="text-center h2 h2-responsive text-blue animated swing delay-3s">{{searchtxt}} GITHUB REPOSITORIES </h2>
         <div class="card">
-          <div class="card-header text-center blue-gradient text-white"><h2>{{repo.name}}</h2></div>
+          <div class="card-header text-center blue-gradient text-blue"><h2>{{repo.name}}</h2></div>
           <div class="card-body">
             <p class="card-text"><strong>Description: </strong>{{repo.description}}</p>
             <p class="card-text"><strong>Create at: </strong>{{repo.created_at|date}}</p>

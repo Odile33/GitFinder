@@ -12,6 +12,7 @@ import { UserinfoComponent } from './userinfo/userinfo.component';
 import { RepositoryinfoComponent } from './repositoryinfo/repositoryinfo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FontPipe } from './font.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     UserinfoComponent,
     RepositoryinfoComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    FontPipe
   ],
   imports: [
     BrowserModule,
